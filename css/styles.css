@@ -76,6 +76,7 @@ body {
   stroke: #9C69E2;
 }
 .header .nav-principal {
+  visibility: hidden;
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -91,7 +92,7 @@ body {
   z-index: 100;
   position: absolute;
   background-color: #FFFFFF;
-  box-shadow: 0px 4px 5px 0px rgba(75, 93, 104, 0.8);
+  box-shadow: rgba(125, 59, 236, 0.1) 0px 10px 15px -3px, rgba(125, 59, 236, 0.05) 0px 4px 6px -2px;
 }
 .header .nav-principal__menu {
   display: flex;
@@ -160,9 +161,6 @@ body {
   margin: 0 2rem;
 }
 
-.main {
-  border-top: 2px dashed #CFD6DA;
-}
 .main .about-me {
   padding: 0 1rem;
   margin-bottom: 2rem;
@@ -177,12 +175,13 @@ body {
   background-position: center;
 }
 .main .about-me__container {
+  border-top: 2px dashed #CFD6DA;
   border-bottom: 2px dashed #CFD6DA;
 }
 .main .about-me__title, .main .contact-me__title {
   text-indent: 4rem;
   color: #212353;
-  margin-bottom: 3rem;
+  margin: 4rem 0 3rem;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2.4rem;
@@ -328,7 +327,7 @@ body {
   fill: #212353;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 680px) {
   .logo {
     width: 64px;
     height: 64px;
@@ -345,6 +344,7 @@ body {
     display: none;
   }
   .header .nav-principal {
+    visibility: visible;
     height: 100%;
     position: relative;
     display: flex;
@@ -401,7 +401,6 @@ body {
   .main .about-me__my-photo {
     height: 50rem;
     width: 98%;
-    background-position: center;
   }
   .main .about-me__title {
     font-size: 3.5rem;
@@ -488,6 +487,146 @@ body {
     height: 48px;
   }
 }
+@media (min-width: 1024px) {
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+  .header {
+    z-index: 1;
+    padding: 1.5rem 4rem 0;
+  }
+  .header__btn-menu {
+    display: none;
+  }
+  .header .nav-principal {
+    visibility: visible;
+    justify-content: flex-end;
+  }
+  .header .nav-principal__container {
+    width: 45rem;
+    height: 5rem;
+  }
+  .header .nav-principal__menu {
+    justify-content: space-between;
+  }
+  .header .nav-principal__menu-link {
+    font-size: 2rem;
+  }
+  .header .nav-principal__menu-link:hover {
+    border-bottom: 2px solid #9C69E2;
+  }
+  .hero {
+    margin: 10rem auto 4rem;
+    position: relative;
+  }
+  .hero__image {
+    width: 70%;
+  }
+  .hero__content {
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+    box-shadow: rgba(125, 59, 236, 0.1) 0px 10px 15px -3px, rgba(125, 59, 236, 0.05) 0px 4px 6px -2px;
+    width: 60rem;
+    height: 35rem;
+    position: absolute;
+    bottom: 4.5rem;
+    left: 1rem;
+    background-color: #FFFFFF;
+  }
+  .hero__title {
+    padding: 0 3.5rem;
+    font-size: 3.2rem;
+    max-width: 55rem;
+    text-align: left;
+  }
+  .hero__btn-about-me {
+    margin: 4rem auto 0;
+    width: 22rem;
+    height: 4.5rem;
+    font-size: 2rem;
+  }
+  .main .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5rem;
+    padding: 2rem;
+    margin: 4rem 2rem;
+  }
+  .main .about-me__my-photo {
+    width: 40%;
+    background: url("../images/my-photo-desktop.svg");
+    background-size: cover;
+  }
+  .main .about-me__container {
+    padding-top: 4rem;
+    width: 60%;
+  }
+  .main .about-me__title {
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+  }
+  .main .about-me__description {
+    padding: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  .main .about-me__btn-go-portfolio {
+    margin: 5rem auto 6rem;
+    height: 4.5rem;
+    width: 24rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+  }
+  .main .contact-me {
+    padding-top: 1rem;
+  }
+  .main .contact-me__title {
+    font-size: 2.8rem;
+    width: max-content;
+    margin: 0 auto 5rem;
+  }
+  .main .contact-me .form__fieldset {
+    padding: 3rem 35rem 0;
+  }
+  .main .contact-me .form__title {
+    font-size: 2.4rem;
+  }
+  .main .contact-me .form__field {
+    padding: 0 1rem;
+    font-size: 2rem;
+  }
+  .main .contact-me .form__field-message {
+    font-size: 2rem;
+    padding: 1rem;
+    height: 24rem;
+  }
+  .main .contact-me__btn-contact-me {
+    margin: 5rem auto;
+    width: 18rem;
+    height: 4.5rem;
+    font-size: 2rem;
+  }
+  .footer {
+    padding: 0 4rem;
+  }
+  .footer__nav {
+    margin: 0;
+    padding-top: 2rem;
+    width: 45rem;
+    justify-content: space-around;
+  }
+  .footer__nav-menu {
+    font-size: 2rem;
+  }
+  .footer .socials__link svg {
+    width: 36px;
+    height: 36px;
+  }
+}
 /* display utility */
 .none {
   display: none;
@@ -503,6 +642,56 @@ body {
 
 .block {
   display: block;
+}
+
+.menu-active {
+  color: #9C69E2 !important;
+  border-bottom: 2px solid #9C69E2;
+}
+
+.pulse {
+  margin-top: 20px;
+  padding: 20px 40px;
+  background-color: #4E4DED;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05);
+  animation: shadow-pulse 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
+  }
+}
+.header__btn-menu {
+  z-index: 1000;
+}
+
+button .translate {
+  transition: transform 0.25s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+button .rotate {
+  transition: transform 0.25s ease-in-out;
+  transition-delay: 0s;
+}
+
+button.open .translate {
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+button.open .rotate {
+  transform: rotate(0);
+  transition-delay: 0.25s;
 }
 
 /*# sourceMappingURL=styles.css.map */
