@@ -232,6 +232,7 @@ body {
 }
 .main .contact-me__title {
   text-indent: unset;
+  padding: 0 1rem;
   color: #212353;
   margin-bottom: 3rem;
 }
