@@ -9,200 +9,225 @@
 
   <!-- Normalize css: A modern alternative to CSS resets -->
   <link rel="preload" href="./css/normalize.css" as="style">
+  <link rel="stylesheet" href="./css/normalize.css">
+
   <!-- Animate style -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <link rel="stylesheet" href="./css/normalize.css">
   <!-- My styles css -->
   <link rel="preload" href="/css/styles.css" as="style">
   <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 
-<body>
-
-  <header class="header">
-    <a href="index.html"><svg class="logo" xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-terminal" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5"
-        stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M5 7l5 5l-5 5" />
-        <path d="M12 19l7 0" />
-      </svg></a>
-    <nav class="nav-principal">
-      <div class="nav-principal__container">
-        <!-- <button class="header__btn-menu header__btn-menu-close">
-          <svg class="header__btn-menu--close" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x"
-            width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M18 6l-12 12" />
-            <path d="M6 6l12 12" />
-          </svg>
-        </button> -->
-        <div class="nav-principal__menu">
-          <a class="menu-active nav-principal__menu-link" href="index.html">Home</a>
-          <a class="nav-principal__menu-link" href="#">Portfolio</a>
-          <a class="nav-principal__menu-link" href="#contact-me">Contact me</a>
-        </div>
-      </div>
-    </nav>
-    <!-- <button class="header__btn-menu">
-      <svg class="header__btn-menu--open" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu"
-        width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-        stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M4 8l16 0" />
-        <path d="M4 16l16 0" />
-      </svg>
-    </button> -->
-    <button class="header__btn-menu header__btn-menu--open" aria-label="Toggle Navigation">
-      <svg viewBox="-50 -40 100 80" width="26" height="26">
-        <defs>
-          <path id="line" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" d="M -40 0 h 80" />
-        </defs>
-        <g>
-          <g class="translate" transform="translate(0 -30)">
-            <g class="rotate" transform="rotate(-45)">
-              <use transform="rotate(45)" href="#line" />
-            </g>
-          </g>
-
-          <g class="rotate" transform="rotate(45)">
-            <use transform="rotate(-45)" href="#line" />
-          </g>
-
-          <g class="translate" transform="translate(0 30)">
-            <g class="rotate" transform="rotate(-45)">
-              <use transform="rotate(45)" href="#line" />
-            </g>
-          </g>
-        </g>
-      </svg>
-    </button>
-  </header>
-  <section class="hero">
-    <img class="hero__image" src="./images/hero.svg" alt="hero image programmer">
-
-    <div class="hero__content">
-      <h1 class="hero__title">Hey, I'm Gustavo S. Dos Santos and I like building beautiful websites.</h1>
-      <a class="hero__btn-about-me" href="#about-me">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-down-line" width="36"
-          height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
+<body id="top-home">
+  <div class="container">
+    <header class="header">
+      <a href="index.html"><svg class="logo" xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-terminal" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M15 12h3.586a1 1 0 0 1 .707 1.707l-6.586 6.586a1 1 0 0 1 -1.414 0l-6.586 -6.586a1 1 0 0 1 .707 -1.707h3.586v-6h6v6z" />
-          <path d="M15 3h-6" />
+          <path d="M5 7l5 5l-5 5" />
+          <path d="M12 19l7 0" />
+        </svg></a>
+      <nav class="nav-principal">
+        <div class="nav-principal__container">
+          <!-- <button class="header__btn-menu header__btn-menu-close">
+            <svg class="header__btn-menu--close" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x"
+              width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 6l-12 12" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </button> -->
+          <div class="nav-principal__menu">
+            <a id="np-home" class="menu-active nav-principal__menu-link" href="#top-home">Home</a>
+            <a class="nav-principal__menu-link" href="#">Portfolio</a>
+            <a id="np-contact-me" class="nav-principal__menu-link" href="#contact-me">Contact me</a>
+          </div>
+        </div>
+      </nav>
+      <!-- <button class="header__btn-menu">
+        <svg class="header__btn-menu--open" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu"
+          width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M4 8l16 0" />
+          <path d="M4 16l16 0" />
         </svg>
-        About me
-      </a>
-    </div>
-  </section><!-- End section hero -->
-
-  <main class="main">
-    <section class="about-me" id="about-me">
-      <div class="about-me__my-photo"></div>
-      <div class="about-me__container">
-        <h2 class="about-me__title">About me</h2>
-        <p class="about-me__description">
-          I'm a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible
-          <strong>HTML</strong>, using modern <strong>CSS</strong> practices and writing clean
-          <strong>JavaScript</strong>. When writing JavaScript code, I mostly use <strong>React</strong>, but I can
-          adapt to whatever tools are required.
-        </p>
-        <p class="about-me__description">
-          I'm based in Misiones, Argentina, but I'm happy working remotely and have experience in remote teams. When I'm
-          not coding, you'll find me outdoors. I love being out in nature
-          whther that's going for a walk, run or cycling. I'd love you to check out my work.
-        </p>
-        <a class="about-me__btn-go-portfolio" href="#portfolio">
-          Go to portfolio
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="36"
+      </button> -->
+      <button class="header__btn-menu header__btn-menu--open" aria-label="Toggle Navigation">
+        <svg viewBox="-50 -40 100 80" width="26" height="26">
+          <defs>
+            <path id="line" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round"
+              d="M -40 0 h 80" />
+          </defs>
+          <g>
+            <g class="translate" transform="translate(0 -30)">
+              <g class="rotate" transform="rotate(-45)">
+                <use transform="rotate(45)" href="#line" />
+              </g>
+            </g>
+            <g class="rotate" transform="rotate(45)">
+              <use transform="rotate(-45)" href="#line" />
+            </g>
+            <g class="translate" transform="translate(0 30)">
+              <g class="rotate" transform="rotate(-45)">
+                <use transform="rotate(45)" href="#line" />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </button><!-- Button menu open and close in mobile -->
+    </header>
+    <section class="hero">
+      <img class="hero__image" src="./images/hero.svg" alt="hero image programmer">
+      <div class="hero__content">
+        <h1 class="hero__title">Hey, I'm Gustavo S. Dos Santos and I like building beautiful websites.</h1>
+        <a class="hero__btn-about-me" href="#about-me">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-down-line" width="36"
             height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
             stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M7 7l5 5l-5 5" />
-            <path d="M13 7l5 5l-5 5" />
+            <path
+              d="M15 12h3.586a1 1 0 0 1 .707 1.707l-6.586 6.586a1 1 0 0 1 -1.414 0l-6.586 -6.586a1 1 0 0 1 .707 -1.707h3.586v-6h6v6z" />
+            <path d="M15 3h-6" />
           </svg>
+          About me
         </a>
       </div>
-    </section>
-    <section class="contact-me" id="contact-me">
-      <div class="contact-me__container">
-        <h2 class="contact-me__title">Interesed in doing a proyect together?</h2>
-        <form action="#" class="form">
-          <fieldset class="form__fieldset">
-            <legend class="form__title">Send your message</legend>
-            <div class="form__fields">
-              <input id="name" autocomplete="name" class="form__field" type="text" placeholder="Bill Gates">
-              <input id="email" autocomplete="email" class="form__field" type="email"
-                placeholder="billgates@example.com">
-              <input id="tel" autocomplete="tel" class="form__field" type="tel" placeholder="1234567890">
-              <textarea id="message" class="form__field form__field-message"
-                placeholder="Write your message here"></textarea>
-            </div>
-
-            <input class="contact-me__btn-contact-me pulse" type="submit" value="Contact me">
-          </fieldset>
-        </form><!--End form contact me -->
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <a href="index.html"><svg class="logo" xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-terminal" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5"
-        stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M5 7l5 5l-5 5" />
-        <path d="M12 19l7 0" />
-      </svg></a>
-    <nav class="footer__nav">
-      <a class="footer__nav-menu" href="index.html">Home</a>
-      <a class="footer__nav-menu" href="#">Portfolio</a>
-      <a class="footer__nav-menu" href="#contact-me">Contact me</a>
-    </nav>
-    <div class="socials">
-      <a class="socials__link" href="https://github.com/GustavoSDS" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="36" height="36"
-          viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+    </section><!-- End section hero -->
+    <main class="main">
+      <section class="about-me" id="about-me">
+        <div class="about-me__my-photo"></div>
+        <div class="about-me__container">
+          <h2 class="about-me__title">About me</h2>
+          <p class="about-me__description">
+            I'm a junior front-end developer looking for a new role in an exciting company. I focus on writing
+            accessible
+            <strong>HTML</strong>, using modern <strong>CSS</strong> practices and writing clean
+            <strong>JavaScript</strong>. When writing JavaScript code, I mostly use <strong>React</strong>, but I can
+            adapt to whatever tools are required.
+          </p>
+          <p class="about-me__description">
+            I'm based in Misiones, Argentina, but I'm happy working remotely and have experience in remote teams. When
+            I'm
+            not coding, you'll find me outdoors. I love being out in nature
+            whther that's going for a walk, run or cycling. I'd love you to check out my work.
+          </p>
+          <a class="about-me__btn-go-portfolio" href="#portfolio">
+            Go to portfolio
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="36"
+              height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 7l5 5l-5 5" />
+              <path d="M13 7l5 5l-5 5" />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="contact-me" id="contact-me">
+        <div class="contact-me__container">
+          <h2 class="contact-me__title">Interesed in doing a proyect together?</h2>
+          <form action="#" class="form">
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Send your message</legend>
+              <div class="form__fields">
+                <input id="name" autocomplete="name" class="form__field" type="text" placeholder="Bill Gates">
+                <input id="email" autocomplete="email" class="form__field" type="email"
+                  placeholder="billgates@example.com">
+                <input id="tel" autocomplete="tel" class="form__field" type="tel" placeholder="1234567890">
+                <textarea id="message" class="form__field form__field-message"
+                  placeholder="Write your message here"></textarea>
+              </div>
+              <input class="contact-me__btn-contact-me pulse" type="submit" value="Contact me">
+            </fieldset>
+          </form><!--End form contact me -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__btn-chat-whatsapp" target="_blank" aria-label="Chat on WhatsApp"
+        href="https://wa.me/543755595578?text=Hola.%20Quiero%20más%20información."><svg
+          xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="36" height="36"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+          <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+        </svg>
+      </a>
+      <a class="footer__btn-scroll-top" href="#top-home">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-up-line" width="36"
+          height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
           stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path
-            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            d="M9 12h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v6h-6v-6z" />
+          <path d="M9 21h6" />
         </svg>
       </a>
-      <a class="socials__link" href="https://www.facebook.com/gustavossds" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36"
-          height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-        </svg>
-      </a>
-      <a class="socials__link" href="https://www.linkedin.com/in/gustavossds/" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="36"
-          height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-          <path d="M8 11l0 5" />
-          <path d="M8 8l0 .01" />
-          <path d="M12 16l0 -5" />
-          <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-        </svg>
-      </a>
-      <!--       <a class="socials__link" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="36" height="36"
-          viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-          <path d="M3 7l9 6l9 -6" />
-        </svg>
-      </a> -->
-    </div>
-  </footer>
+      <div class="footer__container">
+        <a href="index.html"><svg class="logo" xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-terminal" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 7l5 5l-5 5" />
+            <path d="M12 19l7 0" />
+          </svg></a>
+        <nav class="footer__nav">
+          <a class="footer__nav-menu" href="#top-home">Home</a>
+          <a class="footer__nav-menu" href="#">Portfolio</a>
+          <a class="footer__nav-menu" href="#contact-me">Contact me</a>
+        </nav>
+        <div class="socials">
+          <a class="socials__link" href="https://github.com/GustavoSDS" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="36"
+              height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            </svg>
+          </a>
+          <a class="socials__link" href="https://www.facebook.com/gustavossds" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36"
+              height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+          </a>
+          <a class="socials__link" href="https://www.linkedin.com/in/gustavossds/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="36"
+              height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+              <path d="M8 11l0 5" />
+              <path d="M8 8l0 .01" />
+              <path d="M12 16l0 -5" />
+              <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+            </svg>
+          </a>
+          <!--       <a class="socials__link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="36" height="36"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+        </a> -->
+        </div>
+      </div>
+      <p class="footer__copy">
+        Copyright © 2023 Gustavo S. Dos Santos. All rights reserved.
+      </p>
+    </footer>
+  </div>
 
   <script type="module" src="./js/main.js"></script>
   <script src="js/anime.min.js"></script>
