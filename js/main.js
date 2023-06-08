@@ -1,4 +1,4 @@
-anime({
+/* anime({
   targets: '.hero__btn-about-me',
   translateY: 15,
   direction: 'infinite',
@@ -13,9 +13,7 @@ anime({
   loop: true,
   easing: 'easeInOutSine',
   value: [0, 1]
-});
-
-
+}); */
 
 
 const button = document.querySelector('.header__btn-menu--open');
@@ -65,18 +63,26 @@ const menuHome = document.querySelector("#np-home");
 const menuPrincipal = document.querySelector(".nav-principal__menu");
 
 menuPrincipal.addEventListener('click', (e) => {
-  const menuLinks = document.querySelectorAll(".nav-principal__menu-link");
-  menuLinks.forEach(menu => {
-    menu.classList.remove('menu-active');
-    e.target.classList.add('menu-active');
-  })
+  if (e.target) {
+    console.log(e.target);
+  }else{
+    console.log("Not clicked");
+  }
 });
 
-const addClassWithScroll = (element, sign, numScroll)=>{
-  window.addEventListener("scroll", function() {
-    sign === '>' ? window.pageYOffset > numScroll ? element.classList.add('menu-active') : element.classList.remove('menu-active') : window.pageYOffset < numScroll ? element.classList.add('menu-active') : element.classList.remove('menu-active');
+const addClassWithScroll = (element, sign, numScroll) => {
+  window.addEventListener("scroll", function () {
+    sign === '>' ? window.pageYOffset > numScroll ? element.classList.add('menu-active') : element.classList.remove('menu-active') : window.pageYOffset < numScroll ? ()=>{removeClassElement(); element.classList.add('menu-active')} : element.classList.remove('menu-active');
   });
 }
 
 addClassWithScroll(menuContactMe, '>', 1200);
-addClassWithScroll(menuHome, '<', 300);
+addClassWithScroll(menuHome, '<', 1100);
+
+const removeClassElement = (e = null) => {
+  const menuLinks = document.querySelectorAll(".nav-principal__menu-link");
+  menuLinks.forEach(menu => {
+    menu.classList.remove('menu-active');
+    e == null ? "" : e.classList.add('menu-active');
+  })
+}

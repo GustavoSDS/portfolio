@@ -23,7 +23,6 @@ html {
 
 body {
   font-size: 16px;
-  max-width: 144rem;
   min-width: 30rem;
   margin: 0 auto;
   color: #777779;
@@ -32,8 +31,10 @@ body {
 .container {
   background-color: #FAFAFA;
 }
-@media (min-width: 680px) {
+@media (min-width: 700px) {
   .container {
+    max-width: 130rem;
+    margin: auto;
     padding-top: 10rem;
   }
 }
@@ -46,6 +47,7 @@ body {
   cursor: pointer;
 }
 
+/* Styles section Header */
 .header {
   position: relative;
   padding: 1rem;
@@ -124,6 +126,7 @@ body {
   transform: scale(1.1);
 }
 
+/* Styles section Hero */
 .hero {
   margin: 3rem 0 1rem;
   min-height: 40rem;
@@ -140,10 +143,11 @@ body {
 .hero__title {
   color: #212353;
   font-size: 2.8rem;
+  text-align: center;
 }
 .hero__btn-about-me {
   position: relative;
-  margin: 4rem 0 4rem;
+  margin: 4rem auto 4rem;
   padding: unset;
   width: 18rem;
   height: 4.2rem;
@@ -173,6 +177,10 @@ body {
   margin: 0 2rem;
 }
 
+.main {
+  /* Styles section About Me */
+  /* Styles section Contact Me */
+}
 .main .about-me {
   padding: 0 1rem;
   margin-bottom: 2rem;
@@ -187,16 +195,16 @@ body {
   background-position: center;
 }
 .main .about-me__container {
-  border-top: 2px dashed #CFD6DA;
-  border-bottom: 2px dashed #CFD6DA;
+  border-top: 1px dashed #CFD6DA;
+  border-bottom: 1px dashed #CFD6DA;
 }
 .main .about-me__title, .main .contact-me__title {
-  text-indent: 4rem;
   color: #212353;
   margin: 4rem 0 3rem;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2.4rem;
+  text-align: center;
 }
 .main .about-me__description {
   text-indent: 4rem;
@@ -211,7 +219,7 @@ body {
   color: #4B5D68;
 }
 .main .about-me__btn-go-portfolio {
-  margin: 4rem 0 4rem;
+  margin: 4rem auto 4rem;
   padding: unset;
   width: 20rem;
   height: 4.5rem;
@@ -306,6 +314,7 @@ body {
 }
 
 .footer {
+  width: 100%;
   background-color: #34323D;
   position: relative;
 }
@@ -318,10 +327,12 @@ body {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 50%;
+  transition: all 0.4s ease;
 }
 .footer__btn-chat-whatsapp:hover svg {
   stroke: #68C9BA;
   filter: brightness(70%);
+  transform: scale(1.1);
 }
 .footer__btn-scroll-top {
   margin: 0 0.5rem 3rem;
@@ -426,10 +437,10 @@ body {
   }
   .header .nav-principal__menu-link {
     height: 100%;
-    font-size: 2.4rem;
+    font-size: 20.8px;
   }
   .header .nav-principal__menu-link:hover {
-    border-bottom: 1px solid #9C69E2;
+    border-bottom: 2px solid #9C69E2;
   }
   .hero {
     margin: 0 auto 4rem;
@@ -439,24 +450,26 @@ body {
     height: 100%;
   }
   .hero__title {
-    font-size: 4rem;
+    font-size: 32px;
     line-height: 5rem;
     letter-spacing: 0.1rem;
     max-width: 60rem;
     margin: 2rem auto;
-    text-align: center;
+    text-align: left;
   }
   .hero__btn-about-me {
     margin: 5rem auto;
     width: 24rem;
     height: 5rem;
     letter-spacing: 0.2rem;
-    font-size: 2.2rem;
+    font-size: 22.4px;
     font-weight: 700;
-    z-index: 1 !important;
   }
   .hero__btn-about-me svg {
     margin: 0 2rem;
+  }
+  .main {
+    /* Styles section Contact me */
   }
   .main .about-me {
     padding: 0 2rem 2rem;
@@ -467,13 +480,13 @@ body {
     width: 98%;
   }
   .main .about-me__title {
-    font-size: 3.5rem;
+    font-size: 32px;
     text-align: center;
     margin-bottom: 4.2rem;
   }
   .main .about-me__description {
     padding: 0 3rem;
-    font-size: 2.8rem;
+    font-size: 22.4px;
     line-height: 4rem;
     letter-spacing: 0.2rem;
     word-spacing: 0.5rem;
@@ -482,21 +495,27 @@ body {
     margin: 6rem auto;
     padding: 0 1rem;
     height: 5.5rem;
-    width: 32rem;
-    font-size: 2.6rem;
+    width: 30rem;
+    font-size: 22.4px;
     letter-spacing: 0.1rem;
     font-weight: 700;
   }
+  .main .contact-me {
+    padding-top: 0;
+  }
   .main .contact-me__title {
     padding: 0 2rem;
-    font-size: 3.6rem;
+    font-size: 32px;
     margin-bottom: 6rem;
   }
+  .main .contact-me .form {
+    padding-top: 2rem;
+  }
   .main .contact-me .form__fieldset {
-    padding: 3rem 4rem 0;
+    padding: 4rem 4rem 0;
   }
   .main .contact-me .form__title {
-    font-size: 2.5rem;
+    font-size: 25.6px;
     letter-spacing: 0.15rem;
   }
   .main .contact-me .form__fields {
@@ -509,14 +528,14 @@ body {
   .main .contact-me .form__field {
     padding: 0 2rem;
     height: 5rem;
-    font-size: 2.4rem;
+    font-size: 20.8px;
   }
   .main .contact-me .form__field:nth-child(2) {
     grid-row: 2/3;
     grid-column: 1/3;
   }
   .main .contact-me .form__field-message {
-    font-size: 2.4rem;
+    font-size: 20.8px;
     padding: 2rem;
     height: 25rem;
     grid-column: 1/3;
@@ -526,9 +545,10 @@ body {
     margin: 6rem auto;
     width: 20rem;
     height: 5rem;
-    font-size: 2.4rem;
+    font-size: 22.4px;
     font-weight: 700;
   }
+  /* Styles section footer */
   .footer__btn-scroll-top {
     height: 5.5rem;
     width: 7rem;
@@ -536,16 +556,16 @@ body {
   .footer__container {
     padding: 1rem 4rem;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .footer__nav {
     padding-top: 2.2rem;
-    width: 36rem;
+    width: 39rem;
     flex-direction: row;
     justify-content: space-around;
   }
   .footer__nav-menu {
-    font-size: 2.2rem;
+    font-size: 20.8px;
   }
   .footer .socials__link {
     margin-left: 1rem;
@@ -560,6 +580,7 @@ body {
     width: 48px;
     height: 48px;
   }
+  /* Styles section Header */
   .header {
     z-index: 10;
     padding: 1.5rem 4rem 0;
@@ -582,8 +603,9 @@ body {
     font-size: 2rem;
   }
   .header .nav-principal__menu-link:hover {
-    border-bottom: 2px solid #9C69E2;
+    border-bottom: 3px solid #9C69E2;
   }
+  /* Styles section Hero */
   .hero {
     margin: 0 auto 4rem;
     position: relative;
@@ -609,12 +631,19 @@ body {
     text-align: left;
   }
   .hero__btn-about-me {
-    margin: 4rem auto 0;
+    margin: 4rem 5rem 0;
     width: 22rem;
     height: 4.5rem;
     font-size: 2rem;
     z-index: 1;
   }
+  .main {
+    /* Styles section About me */
+    /* Styles section Contact me */
+  }
+  /* Styles section footer */
+}
+@media (min-width: 1024px) and (min-width: 1240px) {
   .main .about-me {
     display: flex;
     align-items: center;
@@ -643,15 +672,20 @@ body {
     margin-bottom: 1rem;
   }
   .main .about-me__btn-go-portfolio {
-    margin: 5rem auto 6rem;
+    margin: 5rem 0 6rem;
     height: 4.5rem;
     width: 24rem;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
   }
+}
+@media (min-width: 1024px) {
   .main .contact-me {
     padding-top: 1rem;
+    max-width: 80rem;
+    padding: 0;
+    margin: 0 auto 5rem;
   }
   .main .contact-me__title {
     font-size: 2.8rem;
@@ -659,7 +693,7 @@ body {
     margin: 0 auto 5rem;
   }
   .main .contact-me .form__fieldset {
-    padding: 3rem 35rem 0;
+    padding: 4rem 4rem 0;
   }
   .main .contact-me .form__title {
     font-size: 2.4rem;
@@ -674,11 +708,13 @@ body {
     height: 24rem;
   }
   .main .contact-me__btn-contact-me {
-    margin: 5rem auto;
+    margin: 5rem 0 5rem 54rem;
     width: 18rem;
     height: 4.5rem;
     font-size: 2rem;
   }
+}
+@media (min-width: 1024px) {
   .footer__btn-chat-whatsapp svg {
     width: 5rem;
     height: 5rem;
@@ -706,10 +742,23 @@ body {
     height: 36px;
   }
 }
+.section-proyects {
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 120rem;
+}
+
 /* display utility */
 .menu-active {
   color: #9C69E2 !important;
-  border-bottom: 2px solid #9C69E2;
+  border-bottom: 3px solid #9C69E2;
+}
+.menu-active:hover {
+  border-bottom: 3px solid #9C69E2;
 }
 
 .pulse {
